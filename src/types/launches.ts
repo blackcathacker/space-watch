@@ -1,13 +1,22 @@
 export interface Launch {
     id: string,
-    flightNumber: number
+    name: string,
+    flightNumber: number,
+    rocketId: string,
+    rocketName: string
+    launchDate: string,
+    webcastUrl?: string
 }
 
 export interface QueryResponse {
-    launches: [Launch?],
+    launches: Launch[],
     totalLaunches: number,
     page: number,
     totalPages: number
+}
+
+export interface ApolloQueryResponse {
+    queryLaunches: QueryResponse
 }
 
 export interface Query {
@@ -15,4 +24,22 @@ export interface Query {
     rocketName?: string,
     launchYear?: number,
     page?: number
+}
+
+export interface LaunchApi {
+    id: string,
+    name: string,
+    flight_number: number,
+    rocket: string,
+    date_utc: string,
+    links: { webcast: string }
+}
+
+export interface RocketApi {
+    id: string,
+    name: string
+}
+
+export interface RocketApiMapped {
+    [key: string]: RocketApi
 }
