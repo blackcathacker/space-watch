@@ -23,7 +23,8 @@ export interface Query {
     missionName?: string,
     rocketName?: string,
     launchYear?: number,
-    page?: number
+    page?: number,
+    rowsPerPage?: number
 }
 
 export interface LaunchApi {
