@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Space Watch
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Space Watch is a simple frontend for a GraphQL server - [Space Watch Server](https://github.com/blackcathacker/space-watch-server)
+To run
+```
+npm install
+npm start
+```
+
+This will open up the application in the browser once it starts. Or you can go to [http://localhost:3000](http://localhost:3000). Ensure the [Space Watch Server](https://github.com/blackcathacker/space-watch-server) has been started first.
+
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). See more info on what is available below.
 
 ## Available Scripts
 
